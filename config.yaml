@@ -18,7 +18,7 @@ monitors:
   - id: api-trucykapp-com # unique identifier
     name: API Backend
     description: '' # default=empty
-    url: 'https://api.trucykapp.com/docs' # URL to fetch
+    url: 'https://api.truckykapp.com/docs' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -35,7 +35,7 @@ monitors:
     url: 'https://web.truckyapp.com/'
     method: GET
     expectStatus: 200
-    
+
   - id: trucky-events
     name: Trucky Events
     url: 'https://trucky.events/'
