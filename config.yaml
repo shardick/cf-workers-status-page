@@ -21,7 +21,8 @@ monitors:
     url: 'https://api.truckyapp.com/docs' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false,
+    hideUrl: false
 
   - id: truckyapp-com
     name: Trucky Official Site
@@ -29,15 +30,18 @@ monitors:
     url: 'https://truckyapp.com'
     method: GET
     expectStatus: 200
+    hideUrl: false
 
   - id: web-truckyapp-com
     name: Trucky Web App
     url: 'https://web.truckyapp.com/'
     method: GET
     expectStatus: 200
+    hideUrl: false
 
   - id: trucky-events
     name: Trucky Events
     url: 'https://trucky.events/'
     method: GET
     expectStatus: 200
+    hideUrl: false

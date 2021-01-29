@@ -30,9 +30,12 @@ export default function MonitorCard({ key, monitor, data }) {
               </div>
             </div>
           )}
-          <a href={monitor.url} target="_blank">
-            <div className="text-xl">{monitor.name}</div>
-          </a>
+          {monitor.hideUrl && <div className="text-xl">{monitor.name}</div>}
+          {!monitor.hideUrl && (
+            <a href={monitor.url} target="_blank">
+              <div className="text-xl">{monitor.name}</div>
+            </a>
+          )}
         </div>
         <MonitorStatusLabel kvMonitor={data} />
       </div>
