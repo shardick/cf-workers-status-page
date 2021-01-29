@@ -45,3 +45,10 @@ monitors:
     method: GET
     expectStatus: 200
     hideUrl: false
+
+  - id: tiles-truckyapp-com
+    name: Trucky Map Tiles Server
+    url: 'https://tiles.truckyapp.com/'
+    method: GET
+    expectStatus: 403
+    hideUrl: true
